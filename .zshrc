@@ -146,3 +146,6 @@ export PATH=/home/john/.opencode/bin:$PATH
 
 # XDG_RUNTIME_DIR
 export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+
+# starship
+eval "$(starship init zsh)"
