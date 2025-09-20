@@ -105,17 +105,17 @@ source $ZSH/oh-my-zsh.sh
 # eval "$(pyenv init -)"
 
 # Adding .local/bin to path
-export PATH="/home/john/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # disable autocd
-unsetopt autocd
+unsetopt autoc
 
 # bun completions
-[ -s "/home/john/.bun/_bun" ] && source "/home/john/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -130,7 +130,7 @@ export PATH="$PATH:/usr/local/go/bin"
 . "$HOME/.cargo/env"
 
 # c3
-export PATH="$PATH:/home/john/downloads/c3"
+export PATH="$PATH:$HOME/downloads/c3"
 
 # astronvim
 alias avim="NVIM_APPNAME=avim nvim"
@@ -141,7 +141,7 @@ export XDG_RUNTIME_DIR="/tmp/"
 export PATH="$PATH:$HOME/.turso/env"
 
 # opencode
-export PATH=/home/john/.opencode/bin:$PATH
+export PATH=$HOME/.opencode/bin:$PATH
 
 # XDG_RUNTIME_DIR
 export XDG_RUNTIME_DIR="/run/user/$(id -u)"
